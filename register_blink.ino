@@ -1,5 +1,3 @@
-// TESTING GITHUB
-
 const int led_pin = PB7;
 const uint16_t t1_load = 0;
 const uint16_t t1_compare = 31250;
@@ -31,5 +29,3 @@ ISR(TIMER5_COMPA_vect){
   TCNT5 = t1_load;
   PORTB ^= (1 << led_pin);
 }
-
-
